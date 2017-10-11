@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PrismHelloWorldDesktop
+namespace HelloWorldModule.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for HelloWorldView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class HelloWorldView : UserControl
     {
-        public MainWindow()
+        public HelloWorldView()
         {
             InitializeComponent();
         }
