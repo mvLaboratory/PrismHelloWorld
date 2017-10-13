@@ -69,7 +69,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HelloWorldModule.cs" />
+    <Compile Include="Infrastructure\InfoChangedEvent.cs" />
+    <Compile Include="Infrastructure\InfoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Updater.cs" />
     <Compile Include="Views\HelloWorldView.xaml.cs">
       <DependentUpon>HelloWorldView.xaml</DependentUpon>
     </Compile>
