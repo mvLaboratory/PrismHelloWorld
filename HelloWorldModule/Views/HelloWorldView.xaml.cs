@@ -20,9 +20,10 @@ namespace HelloWorldModule.Views
     /// </summary>
     public partial class HelloWorldView : UserControl
     {
-        public HelloWorldView()
+        public HelloWorldView(HelloWorldViewModel viewModel)
         {
             InitializeComponent();
+            DataContext = viewModel;
         }
     }
 }

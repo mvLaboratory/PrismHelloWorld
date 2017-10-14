@@ -7,17 +7,18 @@ namespace HelloWorldModule
     public class HelloWorldModule : IModule
     {
         private readonly IRegionManager regionManager;
+        private Updater _updater;
 
-        public HelloWorldModule(IRegionManager regionManager)
+        public HelloWorldModule(IRegionManager regionManager, Updater updater)
         {
             this.regionManager = regionManager;
+            _updater = updater;
         }
 
         public void Initialize()
         {
             regionManager.RegisterViewWithRegion("MainRegion", typeof(Views.HelloWorldView));
-
-            new Updater().Start();
+            _updater.Start();
         }
     }
 }

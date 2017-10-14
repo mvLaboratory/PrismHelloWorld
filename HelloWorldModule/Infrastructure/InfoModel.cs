@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace HelloWorldModule
 {
-    class InfoModel
+    public class InfoModel
     {
         public String Text { get; set; }
+
+        public InfoModel(int index)
+        {
+            Text = "Info " + index;
+        }
 
         public override String ToString()
         {
