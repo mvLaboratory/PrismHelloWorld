@@ -1,7 +1,7 @@
 ﻿<UserControl x:Class="HelloWorldModule.Views.HelloWorldView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <StackPanel>
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" VerticalAlignment="Stretch" VerticalContentAlignment="Stretch">
+    <StackPanel Background="Azure" VerticalAlignment="Stretch">
         <TextBlock Text="Hello World" Foreground="Green" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Calibri" FontSize="24" FontWeight="Bold"></TextBlock>
         <TextBlock Text="{Binding Path=TestText, FallbackValue=[TestText]}" VerticalAlignment="Center" FontFamily="Calibri" FontSize="24" ></TextBlock>
     </StackPanel>
